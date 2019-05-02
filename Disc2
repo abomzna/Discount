@@ -1,0 +1,65 @@
+	import java.util.Scanner;
+
+public class Disc2 {
+			
+		public static void main (String[]args) {
+			  
+			System.out.println("If Your Employee press 1 \nIf your affilite press 2 \nIf Your Customer over two years press 3 \nIf your new Customer press 4 :");
+			Scanner input = new Scanner(System.in);
+			String kind = input.nextLine();
+			int K = Integer.parseInt(kind);
+			
+			
+			System.out.println("Are you baying groceries ? \nYes press (1)  \nNo press (2) ? ");
+			Scanner input1 = new Scanner(System.in);
+			String groceries = input1.nextLine();
+			int gr1 = Integer.parseInt(groceries);
+				
+			 
+			System.out.println("Enter the bill amount : ");
+			Scanner input2 = new Scanner(System.in);
+			String amount = input2.nextLine();
+			
+			 
+			double A =Double.parseDouble(amount);
+			int D = (int)(A/100);
+			double C = (A-(D*5));
+			
+			
+			double result ;
+			 
+			if(K == 1 && gr1 == 2) {
+				
+				result = (C/10)*7; 
+				
+				System.out.println(result);
+				System.out.println("You have 30% Discount and For evrey 100$ You  have 5$ Discount");
+				
+				  
+			} else if(K == 2 && gr1 == 2 ) {
+				
+				result = (C/10)*9; 
+				System.out.println(result);
+				System.out.println("You have 10% Discount and For evrey 100$ You  have 5$ Discount");
+
+				 
+			} else if(K == 3 && gr1 == 2) {
+				result = (C/100)*95; 
+				System.out.println(result);
+				System.out.println("You have 5% Discount and For evrey 100$ You  have 5$ Discount");
+
+				
+			} else {
+				System.out.println(C);
+				System.out.println("For evrey 100$ You  have 5$ Discount");
+
+
+			}
+			
+			
+		}
+
+	}
+
+
+
