@@ -25,32 +25,35 @@ public class Disc2 {
 			int D = (int)(A/100);
 			double C = (A-(D*5));
 			
-			
-			double result ;
-			 
-			if(K == 1 && gr1 == 2) {
+	        Opertion(K,gr1,C);
+
+		}
+			public static void Opertion(int K1 , int gr11 , double C1) {
+				double result ;
+
+			if(K1 == 1 && gr11 == 2) {
 				
-				result = (C/10)*7; 
+				result = (C1/10)*7; 
 				
 				System.out.println(result);
 				System.out.println("You have 30% Discount and For evrey 100$ You  have 5$ Discount");
 				
 				  
-			} else if(K == 2 && gr1 == 2 ) {
+			} else if(K1 == 2 && gr11 == 2 ) {
 				
-				result = (C/10)*9; 
+				result = (C1/10)*9; 
 				System.out.println(result);
 				System.out.println("You have 10% Discount and For evrey 100$ You  have 5$ Discount");
 
 				 
-			} else if(K == 3 && gr1 == 2) {
-				result = (C/100)*95; 
+			} else if(K1 == 3 && gr11 == 2) {
+				result = (C1/100)*95; 
 				System.out.println(result);
 				System.out.println("You have 5% Discount and For evrey 100$ You  have 5$ Discount");
 
 				
 			} else {
-				System.out.println(C);
+				System.out.println(C1);
 				System.out.println("For evrey 100$ You  have 5$ Discount");
 
 
@@ -59,7 +62,7 @@ public class Disc2 {
 			
 		}
 
-	}
+	
 
-
+}
 
